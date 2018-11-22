@@ -1083,8 +1083,6 @@ def bot(op):
                                 random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                 sepri.acceptGroupInvitation(op.param1)
-                            except:
-                                pass:
                 return
 
             if Amid in op.param3:
@@ -1114,10 +1112,8 @@ def bot(op):
                                 k1.acceptGroupInvitation(op.param1)
                             except:
                                 try:
-                                    sepri.inviteIntoGroup(op.param1,[op.param3])
+                                    random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                     k1.acceptGroupInvitation(op.param1)
-                                except:
-                                    pass
                 return
 
             if Bmid in op.param3:
@@ -1145,8 +1141,6 @@ def bot(op):
                                 random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                 k2.acceptGroupInvitation(op.param1)
-                            except:
-                                pass
                 return
 
             if Cmid in op.param3:
@@ -1174,8 +1168,6 @@ def bot(op):
                                 random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                 k3.acceptGroupInvitation(op.param1)
-                            except:
-                                pass
                 return
 
             if Dmid in op.param3:
@@ -1231,8 +1223,6 @@ def bot(op):
                                 random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                 k5.acceptGroupInvitation(op.param1)
-                            except:
-                                pass:
                 return
 
             if Fmid in op.param3:
@@ -1262,10 +1252,8 @@ def bot(op):
                                 k6.acceptGroupInvitation(op.param1)
                             except:
                                 try:
-                                    sepri.inviteIntoGroup(op.param1,[op.param3])
+                                    random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                     k6.acceptGroupInvitation(op.param1)
-                                except:
-                                    pass
                 return
 
             if Gmid in op.param3:
@@ -1293,8 +1281,6 @@ def bot(op):
                                 random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                 k7.acceptGroupInvitation(op.param1)
-                            except:
-                                pass
                 return
 
             if Hmid in op.param3:
@@ -1322,8 +1308,6 @@ def bot(op):
                                 random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                 k8.acceptGroupInvitation(op.param1)
-                            except:
-                                pass
                 return
 
             if Imid in op.param3:
@@ -1351,8 +1335,6 @@ def bot(op):
                                 random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                 random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
                                 k9.acceptGroupInvitation(op.param1)
-                            except:
-                                pass
                 return
 
             if admin in op.param3:
@@ -1375,8 +1357,6 @@ def bot(op):
                             k1.findAndAddContactsByMid(op.param1,admin)
                             k1.inviteIntoGroup(op.param1,admin)
                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
-                        except:
-                            pass
 
                 return
 
@@ -1400,9 +1380,6 @@ def bot(op):
                             k4.findAndAddContactsByMid(op.param1,staff)
                             k4.inviteIntoGroup(op.param1,staff)
                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
-                        except:
-                            pass
-
                 return
 
         if op.type == 55:
