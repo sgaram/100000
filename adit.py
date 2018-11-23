@@ -2052,9 +2052,15 @@ def bot(op):
                                 else: md+="âââ¥ â ArabãOFFã\n"       
                                 sepri.sendMessage(msg.to, md+"ââ£ââââââââââââââââââââ\nâââ§ Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nâââ§ Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]\n  ââââââââââââââââââ")                                
 
-                        elif cmd == "ayam" or text.lower() == 'ayam':
+                        elif cmd == "antijs stay":
+                          if wait["selfbot"] == True:
                             if msg._from in admin:
-                                sepri.sendImageWithURL(msg.to,"https://4.bp.blogspot.com/-8ZWMbtQOFxM/WA7F0qzNlWI/AAAAAAAAEpA/D7d8SRk2n1UkVeokgMpVQUWo8fpsXCCEgCLcB/s1600/foto%2Blucu%2Bngakak.jpg") 
+                                try:
+                                    ginfo = sepri.getGroup(msg.to)
+                                    sepri.inviteIntoGroup(msg.to, [Zmid])
+                                    sepri.sendMessage(msg.to,"Grup ã"+str(ginfo.name)+"ã Aman Dari JS")
+                                except:
+                                    pass
 
                         elif cmd == "funkzher" or text.lower() == 'funkzher':
                             sepri.sendImageWithURL(msg.to,"https://4.bp.blogspot.com/-ep5ISQIVk6g/W_ZiRS6k7AI/AAAAAAAAAQY/rKMINF8byiw0zbC0IH5j7sSgUDXU70zUQCLcBGAs/s1600/PicsArt_11-04-09.02.36.jpg") 
@@ -2114,16 +2120,6 @@ def bot(op):
                     pass
             except:
                 pass
-
-                        elif cmd == "antijs stay":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                                try:
-                                    ginfo = sepri.getGroup(msg.to)
-                                    sepri.inviteIntoGroup(msg.to, [Zmid])
-                                    sepri.sendMessage(msg.to,"Grup ã"+str(ginfo.name)+"ã Aman Dari JS")
-                                except:
-                                    pass
 
                         elif 'Antijs ' in msg.text:
                            if msg._from in admin:
